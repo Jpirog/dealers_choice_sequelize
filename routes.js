@@ -18,8 +18,6 @@ router.get('/', async (req, res, next) => {
 
 router.get('/:parentDeptId-:parentDept', async (req, res, next) => {
   try {
-    console.log("Params = ",req.params)
-    console.log("ID = ",req.params.parentDeptId)
     res.send(await dispDeptSubs(req.params.parentDeptId, req.params.parentDept))
   }
   catch (err) {
@@ -29,7 +27,6 @@ router.get('/:parentDeptId-:parentDept', async (req, res, next) => {
 
 router.get('/:parentDeptId-:parentDept/items/:subId-:myDept', async (req, res, next) => {
   try {
-    console.log(req.params)
     res.send(await dispDeptSubItems(req.params.subId, req.params.parentDept, req.params.myDept))
   }
   catch (err) {
