@@ -1,0 +1,17 @@
+body{
+  background-color: aliceblue;
+}
+h1, h2, h3{
+  text-align: center;
+}
+img{
+  height: 8rem;
+}
+ul  li{
+  list-style-type: none;
+  line-height: 10rem;
+  width: 125rem;;
+}
+ul li img{
+  vertical-align: middle;
+} 
