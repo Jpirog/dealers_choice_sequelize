@@ -6,7 +6,7 @@ const {
   DECIMAL
 } = Sequelize;
 
-const db = new Sequelize('dealers_choice_sequalize', 'postgres', 'FSA123', {
+const db = new Sequelize(process.env.DATABASE_URL || 'dealers_choice_sequalize', 'postgres', 'FSA123', {
   host: 'localhost',
   post: '5432',
   dialect: 'postgres',
